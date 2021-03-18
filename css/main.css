@@ -82,3 +82,20 @@ video {
 .news__comment_add button:active {
     background-color: rgb(241, 136, 124);
 }
+
+.commentBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1rem;
+    padding: 15px 0 15px 0;
+    border: 1px solid rgb(245, 164, 155);
+    border-radius: 6px;
+}
+
+.commentBlock span {
+    padding: 0 15px 0 15px;
+}
+.commentMark {
+    font-size: 0.9rem;
+}
