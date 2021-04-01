@@ -57,6 +57,7 @@ video {
     align-items: flex-start;
     margin-top: 1.5em;
     position: relative;
+    flex-direction: column;
 }
 
 .news__comment_add textarea {
@@ -86,8 +87,10 @@ video {
 .commentBlock {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
     font-size: 1rem;
+    margin-top: 1em;
     padding: 15px 0 15px 0;
     border: 1px solid rgb(245, 164, 155);
     border-radius: 6px;
@@ -97,5 +100,94 @@ video {
     padding: 0 15px 0 15px;
 }
 .commentMark {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.commBoxTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.commentContentBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.news__comment_add span {
+    margin-bottom: 0.4em;
+}
+
+#author {
+    padding-bottom: 5px;
+}
+
+.commentBlock button {
+    max-width: 200px;
+    border: none;
+    padding: 0.3em 0.8em;
+    margin-right: 0.4em;
+    background-color: rgb(245, 164, 155);
+    color: white;
     font-size: 0.9rem;
+    border-radius: 87em;
+    outline: none;
+    cursor: pointer;
+}
+
+.commentBlock button:hover {
+    background-color: rgb(241, 153, 143);
+}
+
+.commentBlock button:active {
+    background-color: rgb(241, 136, 124);
+}
+
+.commBoxTop div{
+    margin-right: auto;
+ }
+
+.commBoxTop .date {
+    padding-left: 0;
+    font-size: 0.8rem;
+}
+
+.sortBox {
+    padding: 1em 0;
+}
+
+.sortBox button {
+    max-width: 200px;
+    border: none;
+    padding: 0.1em 0.3em;
+    margin-right: 0.4em;
+    color: rgb(245, 164, 155);
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid rgb(245, 164, 155);
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
+.sortBox button:hover {
+    color: rgb(241, 153, 143);
+    border-bottom: 1px solid rgb(241, 153, 143);
+    background: none;
+}
+
+.sortBox button:active {
+    color: rgb(241, 136, 124);
+    border-bottom: 1px solid rgb(241, 136, 124);
+    background: none;
 }
